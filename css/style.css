@@ -206,7 +206,11 @@ nav ul li a{
     height: 427px; 
 }
  /* ========  End America Highlights area ========   */
-    
+ .ticket-form{
+     text-align: center;
+     font-size: 30px;
+     font-weight: 700;
+ }
  .gallery-info{
      display: flex;
      justify-content: space-around;
@@ -279,8 +283,11 @@ footer{
 
  @media (max-width: 600px){
     .highlights-image{
-        width: 290px;
+        width: 230px;
         height: 300px; 
+    }
+    .highlights-text {
+        width: 225px;
     }
      nav{
          flex-direction: column;
@@ -303,9 +310,31 @@ footer{
     .player-deails{
         width: 100%;
     }
-    .gallery-image img, .gallery-form{
-        height: 300px;
-        width: 80%;
+    .gallery-image img{
+        height: 250px;
+        width: 100%;
+    }
+    .gallery-form {
+        padding: 20px;
+        height: 330px;
+        width: 100%;
+    }
+    
+    footer {
+        margin-bottom: 63px;
+        margin-top: 60px; 
+    }
+    .footer-logo img {
+        height: 60.42px;
+        width: 130.82px;
+    }
+    .footer-icons {
+        margin-left: 40px;
+    }
+    
+
+    .copyright {
+        margin-left: 40px;
     }
  }
  /* ========  start media query body area ========   */
@@ -322,6 +351,11 @@ footer{
     .highlights{
         justify-content: center;
     }
+    
+    .highlights-image{
+        width: 290px;
+        height: 320px; 
+    }
     .gallery-image img{
         margin-right: 20px;
     }
@@ -329,8 +363,8 @@ footer{
         box-shadow: 2px 5px 30px gray;
         padding: 30px;
         border-radius: 7px;
-        height: 400px;
-        width: 90%;
+        height: 320px;
+        width: 60%;
         margin: 20px 0;
     }
     .highlights-text{
@@ -352,6 +386,18 @@ footer{
     .players{
         grid-template-columns: repeat(3, 1fr);
     }
+    .highlights{
+        justify-content: space-between;
+    }
+    .highlights-image{
+        width: 500px;
+        height: 400px; 
+    }
+    .highlights-text{
+        margin-top: 0;
+        height: 400px;
+
+    }
     .gallery-info{
        
         justify-content: space-between;
@@ -360,13 +406,30 @@ footer{
     .top-world-cup-area{
         justify-content: space-between;
     }
-    .gallery-image img, .gallery-form{
+    .gallery-image img{
         box-shadow: 2px 5px 30px gray;
         padding: 30px;
         border-radius: 7px;
-        height: 300px;
-        width: 567;
+        height: 400px;
         margin: 20px 0;
+    }
+    .gallery-image{
+        width: 360px;
+    }
+    .gallery-form{
+        height: 400px;
+        width: 360px;
+    }
+    .gallery-form input {
+        padding: 15px;
+        margin: 3px 0px;
+    }
+    .gallery-image {
+        width: 420px;
+    }
+    
+    .footer-logo {
+        margin-right: 70px;
     }
 }
 
