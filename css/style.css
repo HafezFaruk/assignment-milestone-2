@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ======start common css======= */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+h1{
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;   
+}
+h3{
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+img{
+    width: 100%;
+}
+.bottum{
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 30px 0;
+    display: inline-block;
+}
+/* ======end common css======= */
+
+/* ------------------------------------------------------- */
+
+/* ======== start header or nav area ======== */
+header{
+    background-color: #2D25A0;
+} 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+nav > ul{
+    display: flex;
+    padding-left: 0;
+    }
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+}
+nav ul li a{
+    color: white;
+}
+  
+/* ======== end header or nav area ======== */
+
+/* ------------------------------------------------------- */
+
+/* ======== start top world football cup-area ======== */
+/* transition */
+.box {
+   
+    transition: transform 1s;
+}
+
+.box:hover {
+    transform: rotate(20deg);
+}
+
+/* animation */
+
+@keyframes ping-pong {
+    0% {
+        top: 0;   
+        left: 0;
+        background-color: yellow;
+    }
+    
+
+    10% {
+        top: 20px;
+        background-color: red;
+    }
+    20% {
+        top: 200px;
+        background-color: #eb0f7d;
+    }
+
+    100% {
+        top: 0;
+        left: 100%;
+        background-color: yellow;
+    }
+}
+
+.top-world-cup-bg:hover .ball, .ball1 {
+    animation: ping-pong 4s ease-in-out 1s infinite alternate;
+}
+.ball {
+    width: 20px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2D25A0;
+    position: relative;
+}
+.ball1 {
+    width: 20px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2D25A0;
+    position: relative;
+}
+/* animation */
+.top-world-cup-bg{
+    background-color: #2D25A0;
+    
+}
+.top-world-cup-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;   
+}
+
+.top-world-cup-images{
+    width: 300px;
+    height: auto; 
+}
+
+/* ======== end world cup top area ======== */
+
+/* ------------------------------------------------------- */
+
+/* ======== start world cup players area ======== */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 70px;
+    max-width: 900px;
+}
+.player{
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 5px; 
+}
+.player p{
+    font-size: 16px;
+}
+.player-deails{
+    width: 250px;
+    height: 180px;
+    overflow-y: scroll;
+    }
+.player-deails::-webkit-scrollbar {
+    display: none;
+      }
+.player-deails{
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    }
+
+
+/* ========= end Copa America players area ========= */
+/* -------------------------------------------------------  */
+ /* ======== start Copa America Highlights area ========   */
+.highlights-main{
+    margin-top: 50px;
+}
+.highlights{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+  
+}
+.highlights-text{
+    height: auto;
+    width: 300px;
+    
+    
+}
+.highlights-text h2{
+    margin: 0;
+}
+
+.highlights-image{
+    width: 567px;
+    height: 427px; 
+}
+ /* ========  End America Highlights area ========   */
+    
+ .gallery-info{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .gallery-form input{
+     padding: 3px 3px;
+     margin: 3px 0;
+ }
+ 
+ .gallery-image img, .gallery-form{
+    box-shadow: 2px 5px 30px gray;
+    padding: 30px;
+    border-radius: 7px;
+    height: 400px;
+    width: 90%;
+    margin: 20px 0;
+}
+ form{
+     display: flex;
+     flex-direction: column;
+ }
+ form input{
+     margin-bottom: 20px;
+     padding: 10px 30px;
+ }
+
+/* -------------------------------------------------------  */
+/* ========= start Copa America Football Footer area ========= */
+footer{
+    margin-bottom: 63px;
+    margin-top: 158px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;  
+}
+.footer-logo img{
+    height: 67.42px;
+    width: 227.82px;    
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.fab{
+    background-color: #80808057;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0 auto;
+    margin: 20px 14px;
+    color: #80808057;
+    font-size: 20px;
+
+}
+.copyright{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    color: #000000;
+}
+/* ========= End Copa America Football Footer area ========= */
+/* -------------------------------------------------------  */
+
+ /* ========  start media query body area ========   */
+ /* Extra small devices (phones, 600px and down) */
+
+ @media (max-width: 600px){
+    
+     nav{
+         flex-direction: column;
+     }
+     nav ul li a{
+        font-size: 8px;
+        margin-right: 0px;
+    }
+    .top-world-cup-area,
+    .highlights, 
+    .gallery-info{
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        width: 100%;
+    }
+    .player-deails{
+        width: 100%;
+    }
+ }
+ /* ========  start media query body area ========   */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+   
+    .top-world-cup-area{
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlights{
+        justify-content: center;
+    }
+    .gallery-image img{
+        margin-right: 20px;
+    }
+    .gallery-image img, .gallery-form{
+        box-shadow: 2px 5px 30px gray;
+        padding: 30px;
+        border-radius: 7px;
+        height: 400px;
+        width: 90%;
+        margin: 20px 0;
+    }
+    .highlights-text{
+        font-size: 14px;
+    }
+   .bottom{
+       margin-top: 0;
+   }
+
+   .gallery-info{
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+   }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .players{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery-info{
+       
+        justify-content: space-between;
+       
+    }
+    .top-world-cup-area{
+        justify-content: space-between;
+    }
+    .gallery-image img, .gallery-form{
+        box-shadow: 2px 5px 30px gray;
+        padding: 30px;
+        border-radius: 7px;
+        height: 300px;
+        width: 567;
+        margin: 20px 0;
+    }
+}
+
