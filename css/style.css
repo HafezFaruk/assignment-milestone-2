@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ======start common css======= */
-body{
-  
-    overflow-y: scroll;
-    }
-body::-webkit-scrollbar {
-    display: none;
-      }
-body{
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
-    }
-    
+header,
+section
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body{
     margin: 0;
     padding: 0;
