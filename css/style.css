@@ -303,6 +303,10 @@ footer{
     .player-deails{
         width: 100%;
     }
+    .gallery-image img, .gallery-form{
+        height: 300px;
+        width: 80%;
+    }
  }
  /* ========  start media query body area ========   */
 
